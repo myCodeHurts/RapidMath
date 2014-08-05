@@ -1,0 +1,43 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.0.0'
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+
+        debug {
+            storeFile file("../RapidMath.keystore")
+            storePassword “puturstuffhere”
+            keyAlias "puturstuffhere"
+            keyPassword "puturstuffhere"
+        }
+
+        release {
+            storeFile file("../RapidMath.keystore")
+            storePassword "puturstuffhere"
+            keyAlias "puturstuffhere"
+            keyPassword "puturstuffhere"
+        }
+    }
+    buildTypes {
+        release {
+            runProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.google.android.gms:play-services:4.3.23'
+    compile fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+}

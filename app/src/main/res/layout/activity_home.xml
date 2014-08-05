@@ -1,0 +1,110 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal|top"
+    android:padding="30dp"
+    android:showDividers="beginning"
+    android:background="@drawable/litiegray">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi ! I'm RapidMath"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:textColor="#012060"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:gravity="center_vertical|top"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="And YOU?"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="#e85873"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textPersonName"
+            android:ems="10"
+            android:id="@+id/txtProfileName"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:hint="Profile Name"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerAge"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:entries="@array/AgeGroup_arrays"
+            android:prompt="@string/AgeGroup_prompt"
+            android:spinnerMode="dialog"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/sexGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/sexMale"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/sexFemale"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get me started Rapidly !"
+            android:id="@+id/btnGetMeStarted"
+            android:padding="10dp"
+            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="#5dd48d"
+            android:onClick="onBtnClicked" />
+    </LinearLayout>
+
+</LinearLayout>

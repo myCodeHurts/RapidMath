@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Rapidmath">
+        <item name="android:activatedBackgroundIndicator">@drawable/row_highlighter</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- the theme applied to the application or activity -->
+
+</resources>

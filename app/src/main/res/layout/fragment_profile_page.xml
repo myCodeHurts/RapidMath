@@ -1,0 +1,128 @@
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal|top"
+    android:padding="10dp"
+    android:showDividers="beginning"
+    android:background="@drawable/litiegray"
+    tools:context="com.mycodehurts.rapidmath.app.ProfilePageFragment"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:gravity="top|center_horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rapidmath"
+        android:layout_gravity="top"
+        android:adjustViewBounds="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Welcome Rajesh"
+            android:id="@+id/txtWelcomeName"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="#e85873"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Touch Top Left to nativate"
+            android:id="@+id/textView2"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#888888"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:gravity="center_vertical|top"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Share with Friends"
+            android:id="@+id/txtShareWithFriends"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share on Google+"
+            android:id="@+id/btnFB"
+            android:padding="10dp"
+            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal"
+            android:background="#3B5998"
+            android:textColor="#fff"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:gravity="center_vertical|top"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="How do you like this app?"
+            android:id="@+id/txtHowDoYouLike"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate on Play Store"
+            android:id="@+id/btnGooglePlay"
+            android:padding="10dp"
+            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal"
+            android:background="#B3C833"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+

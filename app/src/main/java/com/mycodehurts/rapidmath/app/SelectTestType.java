@@ -1,0 +1,107 @@
+/*
+Copyright (c) 2014 Vishalsinh Jhala (myCodeHurts), Techie Tux.
+
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+
+*/
+
+package com.mycodehurts.rapidmath.app;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioGroup;
+
+
+public class SelectTestType extends Fragment {
+    /**
+     * The fragment argument representing the section number for this
+     * fragment.
+     */
+    private static final String ARG_SECTION_NUMBER = "section_number";
+
+    /**
+     * Returns a new instance of this fragment for the given section
+     * number.
+     */
+    public static SelectTestType newInstance(int sectionNumber) {
+        SelectTestType fragment = new SelectTestType();
+        Bundle args = new Bundle();
+        args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    public SelectTestType() {
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        final View rootView = inflater.inflate(R.layout.activity_select_test, container, false);
+        //TextView textView = (TextView) rootView.findViewById(R.id.section_label);
+        //textView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
+
+        Button btnStartTest = (Button)rootView.findViewById(R.id.btnStartTest);
+        btnStartTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                RadioGroup chkSex = (RadioGroup)rootView.findViewById(R.id.testDifficultLevel);
+
+                if( chkSex.getCheckedRadioButtonId()==-1)
+                {
+
+                }
+                int iLevel = -1;
+                if( chkSex.getCheckedRadioButtonId() == R.id.testEasy )
+                    iLevel = 0;
+                else if (chkSex.getCheckedRadioButtonId() == R.id.testMedium)
+                    iLevel = 1;
+                else if(chkSex.getCheckedRadioButtonId() == R.id.testDifficult)
+                    iLevel = 2;
+
+                CheckBox enableTimer = (CheckBox)rootView.findViewById(R.id.enableTimer);
+
+                Intent intent = new Intent(rootView.getContext(), TestActivity.class);
+                intent.putExtra("iLevel",iLevel);
+                intent.putExtra("enableTimer",enableTimer.isChecked()?1:0);
+
+                startActivity(intent);
+            }
+        });
+
+        return rootView;
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        ((ProfilePage) activity).onSectionAttached(
+                getArguments().getInt(ARG_SECTION_NUMBER));
+    }
+}
+
+

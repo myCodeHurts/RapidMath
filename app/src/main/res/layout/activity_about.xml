@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/litiegray"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:showDividers="beginning">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/litiegray"
+            android:baselineAligned="false"
+            android:gravity="top|center_horizontal"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:gravity="top|center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="top"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/rapidmath" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:gravity="center_vertical|top"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Thank you Backers!"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#e85873"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Developed using funds raised from"
+                    android:id="@+id/textView2"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:textColor="#888888"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Kickstarter Campaign"
+                    android:id="@+id/visitkickstarter"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="0dp"
+                    android:textColor="@drawable/DarkiBlue"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:gravity="center_vertical|top"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Store Link"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#e85873"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Buy Rapidmath Material"
+                    android:id="@+id/buyrapidmath"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textColor="@drawable/DarkiBlue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="http://techessentials.myshopify.com/"
+                    android:id="@+id/textView4"
+                    android:layout_gravity="center"
+                    android:padding="0dp"
+                    android:textColor="#888888"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:gravity="center_vertical|top"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="App Developer"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#e85873"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Vishalsinh Jhala"
+                    android:id="@+id/jhalaLink"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textColor="@drawable/DarkiBlue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="https://plus.google.com/+VishalsinhJhala/posts"
+                    android:id="@+id/textView6"
+                    android:layout_gravity="center"
+                    android:padding="0dp"
+                    android:textColor="#888888"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:baselineAligned="false"
+                android:gravity="center_vertical|top"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Github Open Source"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#e85873"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Download Source"
+                    android:id="@+id/githubLink"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textColor="@drawable/DarkiBlue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="https://github.com/myCodeHurts/RapidMath"
+                    android:id="@+id/textView8"
+                    android:layout_gravity="center"
+                    android:padding="0dp"
+                    android:textColor="#888888"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

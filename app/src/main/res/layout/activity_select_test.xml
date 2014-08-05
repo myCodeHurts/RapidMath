@@ -1,0 +1,101 @@
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal|center_vertical"
+    android:padding="30dp"
+    android:showDividers="beginning"
+    android:background="@drawable/litiegray">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Your Skills!"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:textColor="#012060"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:gravity="center_vertical|top"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select Difficulty"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="#e85873"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:id="@+id/testDifficultLevel">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Easy      "
+                android:id="@+id/testEasy"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:id="@+id/testMedium"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difficult"
+                android:id="@+id/testDifficult"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enableTimer"
+            android:text="Enable Timer"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Test Rapidly!"
+            android:id="@+id/btnStartTest"
+            android:padding="10dp"
+            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="#5dd48d"
+             />
+    </LinearLayout>
+
+</LinearLayout>

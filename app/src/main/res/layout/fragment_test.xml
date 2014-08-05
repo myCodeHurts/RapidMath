@@ -1,0 +1,152 @@
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal|top"
+    android:padding="10dp"
+    android:showDividers="beginning"
+    android:background="@drawable/litiegray"
+    tools:context="com.mycodehurts.rapidmath.app.LearnFragment">
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left"
+            android:text="Level: "
+            android:id="@+id/txtLevelHdader"
+            android:gravity="left" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="left"
+            android:layout_marginLeft="50dp"
+            android:text="Medium"
+            android:id="@+id/txtTestType"
+            android:gravity="left"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Time Left(Sec): "
+            android:id="@+id/testTime"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="59"
+            android:id="@+id/txtTimeLeft"
+            android:textStyle="bold"/>
+
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:gravity="top|center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Question 1 of 10"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="#e85873"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Question: blabla bla"
+            android:id="@+id/textQuestion"
+            android:layout_gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:textColor="@drawable/DarkiBlue"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:id="@+id/groupAnswers">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 1"
+                android:id="@+id/answer1"
+                android:layout_gravity="left"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 2"
+                android:id="@+id/answer2"
+                android:layout_gravity="left"
+                android:padding="10dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 3"
+                android:id="@+id/answer3"
+                android:layout_gravity="left"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer 4"
+                android:id="@+id/answer4"
+                android:layout_gravity="left"
+                android:padding="10dp" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/btnNextQuestion"
+            android:padding="10dp"
+            android:gravity="center_horizontal|top"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="#5dd48d"
+            android:onClick="onBtnClicked" />
+    </LinearLayout>
+
+</LinearLayout>
+
